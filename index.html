@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucio A. Nessier | Portfolio CV</title>
+  <meta name="description" content="Project manager portfolio and CV website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="#" class="brand">Lucio A. Nessier</a>
+      <button id="menuToggle" class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <i class="uil uil-bars"></i>
+      </button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#education" data-i18n="nav.education">Education</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="toggles">
+        <button id="langToggle" class="toggle-btn" type="button">ES</button>
+        <button id="themeToggle" class="toggle-btn" type="button" aria-label="Toggle dark mode">&#127769;</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 data-i18n="hero.title">Hi, I'm Lucio!</h1>
+          <h2 data-i18n="hero.subtitle">Project Manager Ssr.</h2>
+          <p data-i18n="hero.body">
+            Results-driven Project Manager with 4+ years of experience leading cross-functional teams in digital ecommerce agencies and operational environments, delivering complex projects on time and driving measurable business outcomes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary pulse-cta" href="mailto:nessier.lucio@gmail.com" data-i18n="hero.cta">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <div class="hero-blob-photo" aria-hidden="true"></div>
+          <img
+            src="assets/D2 T3 Finales - Ph Atrezzo Productora-12.jpg"
+            alt="Lucio portrait"
+            class="hero-photo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 data-i18n="about.title">About me</h2>
+        <p class="section-subtitle" data-i18n="about.subtitle">A little bit about my journey</p>
+        <p data-i18n="about.text">
+          Project Manager focused on digital products, marketing, and operations. I work at the intersection of strategy, design, and execution, helping teams turn ideas into clear plans and deliver them on time.
+        </p>
+        <div class="stats">
+          <article class="stat-card">
+            <h3 data-i18n="about.stat1.value">9+</h3>
+            <p data-i18n="about.stat1.label">Years total experience</p>
+          </article>
+          <article class="stat-card">
+            <h3 data-i18n="about.stat2.value">100+</h3>
+            <p data-i18n="about.stat2.label">Completed projects</p>
+          </article>
+          <article class="stat-card">
+            <h3 data-i18n="about.stat3.value">5</h3>
+            <p data-i18n="about.stat3.label">Companies worked</p>
+          </article>
+        </div>
+        <a id="cvLink" class="btn secondary cv-btn pulse-cta" href="file:///C:/Users/lucio/AppData/Roaming/Cursor/User/workspaceStorage/ea0304f78de38779bd85349ee678f530/pdfs/a28806eb-c73f-4aa9-8a5e-d4922e972705/CV%20Nessier%20ENG.pdf" target="_blank" rel="noopener noreferrer" data-i18n="about.cv">Download CV</a>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 data-i18n="exp.title">Work Experience</h2>
+        <p class="section-subtitle" data-i18n="exp.subtitle">My professional journey</p>
+        <div class="timeline-wrap">
+          <div class="timeline-line"></div>
+          <article class="timeline-item" style="--delay: 0.05s">
+            <span class="dot"></span>
+            <h3>FJ Solutions (July 2025 - Apr 2026)</h3>
+            <p class="time" data-i18n="exp.job1.role">Project Manager</p>
+            <p data-i18n="exp.job1.summary">Acted as the main liaison between five international clients simultaneously and internal teams of sixteen collaborators across design, development, SEO, and paid media.</p>
+            <button class="learn-btn" type="button" data-target="exp1" data-i18n="exp.learn">Show more</button>
+            <div id="exp1" class="exp-detail">
+              <div data-i18n-html="exp.job1.detail">
+                <ul>
+                  <li><span class="exp-item-text">Led a large-scale ecommerce migration of 3500 duplicated SKUs from WooCommerce to Shopify, coordinating cross-functional stakeholders and ensuring a successful on-schedule launch.<span class="exp-link-wrap"><a href="https://gordosales.com/" target="_blank" rel="noreferrer noopener">Visit website</a></span></span></li>
+                  <li><span class="exp-item-text">Managed four simultaneous website redesign projects in BigCommerce, overseeing scope, timelines, and client communication from kickoff to delivery.</span></li>
+                  <li><span class="exp-item-text">Coordinated a multilingual WordPress redesign for a major international company, aligning content, design, and development across multiple teams.<span class="exp-link-wrap"><a href="https://www.tulegajo.com/" target="_blank" rel="noreferrer noopener">Visit website</a></span></span></li>
+                  <li><span class="exp-item-text">Drove ongoing UX and performance improvements for the agency's own website, prioritizing enhancements in collaboration with internal stakeholders.<span class="exp-link-wrap"><a href="https://www.fjsolutions.com/" target="_blank" rel="noreferrer noopener">Visit website</a></span></span></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item" style="--delay: 0.2s">
+            <span class="dot"></span>
+            <h3>Latamways (Dec. 2024 - June 2025)</h3>
+            <p class="time" data-i18n="exp.job2.role">Project Manager</p>
+            <p data-i18n="exp.job2.summary">Project Manager in an ISO certified company of 50+ professionals committed to providing equal access to language services.</p>
+            <button class="learn-btn" type="button" data-target="exp2" data-i18n="exp.learn">Show more</button>
+            <div id="exp2" class="exp-detail">
+              <div data-i18n-html="exp.job2.detail">
+                <ul>
+                  <li>Built and maintained a talent pool of 30+ collaborators, recruiting for diverse linguistic and technical projects.</li>
+                  <li>Managed 15+ daily projects end-to-end, assigning tasks, optimizing timelines, and ensuring adherence to deadlines and quality standards.</li>
+                  <li>Implemented risk mitigation protocols that reduced project disruptions and improved delivery consistency.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item" style="--delay: 0.35s">
+            <span class="dot"></span>
+            <h3>La Maquinita Co. (Sep. 2020 - Sep. 2024)</h3>
+            <p class="time" data-i18n="exp.job3.role">Operations Manager</p>
+            <p data-i18n="exp.job3.summary">Managed one of Argentina's largest coworking networks, overseeing operations across a cross-functional team, sales funnel and client relations in a network of 450+ clients.</p>
+            <button class="learn-btn" type="button" data-target="exp3" data-i18n="exp.learn">Show more</button>
+            <div id="exp3" class="exp-detail">
+              <div data-i18n-html="exp.job3.detail">
+                <ul>
+                  <li>Led a cross-functional team of 3 aligned to OKRs and KPIs, improving operational efficiency and client satisfaction.</li>
+                  <li>Spearheaded sales strategies that doubled annual revenue over 3 years by optimizing pricing models, client acquisition, and service offerings.</li>
+                  <li>Managed a community of 450+ on-site clients; retention strategies increased client retention by 80% through targeted engagement and feedback loops.</li>
+                  <li>Maintained relationships with 20+ external stakeholders and analyzed operational data to improve service quality.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item timeline-item-secondary" style="--delay: 0.5s">
+            <span class="dot"></span>
+            <h3>Grupo Pro Fidelis (Oct. 2018 - Aug. 2020)</h3>
+            <p class="time" data-i18n="exp.job4.role">Graphic and Web Designer</p>
+            <p data-i18n="exp.job4.summary">Graphic Design Lead and Community Manager in an important entertainment company in Córdoba.</p>
+            <button class="learn-btn" type="button" data-target="exp4" data-i18n="exp.learn">Show more</button>
+            <div id="exp4" class="exp-detail">
+              <div data-i18n-html="exp.job4.detail">
+                <ul>
+                  <li>Created 100+ digital assets for social media ads.</li>
+                  <li>Supported web design and development in three different websites.</li>
+                  <li>Supported operational launch of a new product.</li>
+                  <li>Customer support and community management via social media.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item timeline-item-secondary" style="--delay: 0.65s">
+            <span class="dot"></span>
+            <h3>VICS (Oct. 2017 - Oct. 2018)</h3>
+            <p class="time" data-i18n="exp.job5.role">Graphic and Web Designer</p>
+            <p data-i18n="exp.job5.summary">Graphic Designer and Web designer in a digital marketing agency company.</p>
+            <button class="learn-btn" type="button" data-target="exp5" data-i18n="exp.learn">Show more</button>
+            <div id="exp5" class="exp-detail">
+              <div data-i18n-html="exp.job5.detail">
+                <ul>
+                  <li>Created 100+ digital assets for social media ads.</li>
+                  <li>Designed and supported over 15+ websites in Wordpress.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2 data-i18n="services.title">What I Do Best</h2>
+        <p class="section-subtitle" data-i18n="services.subtitle">My strength is bringing structure to complex and fast moving environments, blending both my creative background with my operational expertise.</p>
+        <div class="services-grid">
+          <article class="service-card">
+            <i class="uil uil-briefcase service-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.card1.title">Project Management</h3>
+            <p data-i18n="services.card1.text">I lead digital projects from idea to launch, aligning stakeholders, scope, timelines, and delivery so brands grow with structure, speed, and measurable results.</p>
+          </article>
+          <article class="service-card">
+            <i class="uil uil-presentation-line service-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.card2.title">Strategy</h3>
+            <p data-i18n="services.card2.text">I build product and marketing strategies based on priorities, data, and realistic execution plans that support sustainable growth.</p>
+          </article>
+          <article class="service-card">
+            <i class="uil uil-rocket service-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.card3.title">Product Vision</h3>
+            <p data-i18n="services.card3.text">I shape product vision into actionable roadmaps, balancing user needs, technical feasibility, and measurable business impact.</p>
+          </article>
+          <article class="service-card">
+            <i class="uil uil-users-alt service-icon" aria-hidden="true"></i>
+            <h3 data-i18n="services.card4.title">Team Leadership</h3>
+            <p data-i18n="services.card4.text">I lead collaborative teams with clarity and empathy, driving accountability, communication, and high-quality project outcomes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 data-i18n="edu.title">Education</h2>
+        <p class="section-subtitle" data-i18n="edu.subtitle">My technical background</p>
+        <div class="education-grid">
+          <article class="education-card">
+            <h3 data-i18n="edu.card1.title">Graphic Design technician</h3>
+            <div data-i18n-html="edu.card1.detail">
+              <p>La Metro, Escuela de Diseño y Comunicación Audiovisual.</p>
+              <ul class="education-meta">
+                <li>Native Spanish</li>
+                <li>Professional English (C1)</li>
+              </ul>
+            </div>
+          </article>
+          <article class="education-card">
+            <h3 data-i18n="edu.card2.title">Courses and certifications</h3>
+            <div data-i18n-html="edu.card2.list">
+              <ul class="education-list">
+                <li><span><span class="cert-title">Product Strategy &amp; Product Roadmapping micro certification</span><span class="cert-meta">Product School (Jan. 2024)</span></span></li>
+                <li><span><span class="cert-title">Professional Data Analytics certification</span><span class="cert-meta">Google (May 2023)</span></span></li>
+                <li><span><span class="cert-title">Product-Led Certification</span><span class="cert-meta">Pendo (Feb. 2023)</span></span></li>
+                <li><span><span class="cert-title">Micro Certifications of Product Analytics &amp; Product-Led Growth</span><span class="cert-meta">Product School (Jul. 2022)</span></span></li>
+                <li><span><span class="cert-title">Product Design</span><span class="cert-meta">Udacity (Feb. 2022)</span></span></li>
+                <li><span><span class="cert-title">Product Management Diploma</span><span class="cert-meta">UTN FRBA (Mar. 2022)</span></span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 data-i18n="skills.title">Skills</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">Tools I use</p>
+        <div class="tools-grid">
+          <article class="tool-card">
+            <button class="tool-btn" type="button" data-target="tool1"><i class="uil uil-check-circle"></i> Clickup</button>
+            <div id="tool1" class="tool-detail" hidden>
+              <p data-i18n="skills.tool1">I use ClickUp to manage sprint planning, project timelines, task ownership, and delivery tracking across cross-functional teams in fast-paced ecommerce environments.</p>
+            </div>
+          </article>
+          <article class="tool-card">
+            <button class="tool-btn" type="button" data-target="tool2"><i class="uil uil-book-open"></i> Notion</button>
+            <div id="tool2" class="tool-detail" hidden>
+              <p data-i18n="skills.tool2">I use Notion as a knowledge hub for product documentation, SOPs, meeting notes, and strategic roadmaps that keep stakeholders aligned and informed.</p>
+            </div>
+          </article>
+          <article class="tool-card">
+            <button class="tool-btn" type="button" data-target="tool3"><i class="uil uil-apps"></i> Trello</button>
+            <div id="tool3" class="tool-detail" hidden>
+              <p data-i18n="skills.tool3">I use Trello for visual workflow management, campaign coordination, and operational follow-up, ensuring priorities move smoothly from backlog to completion.</p>
+            </div>
+          </article>
+          <article class="tool-card">
+            <button class="tool-btn" type="button" data-target="tool4"><i class="uil uil-shopping-cart"></i> Shopify, BigCommerce, Wordpress</button>
+            <div id="tool4" class="tool-detail" hidden>
+              <p data-i18n="skills.tool4">I work with leading ecommerce platforms to optimize storefront operations, improve conversion performance, and execute content and product updates with speed.</p>
+            </div>
+          </article>
+          <article class="tool-card">
+            <button class="tool-btn" type="button" data-target="tool5"><i class="uil uil-robot"></i> Claude</button>
+            <div id="tool5" class="tool-detail" hidden>
+              <p data-i18n="skills.tool5">I use Claude to accelerate research, drafting, process design, and team enablement, helping convert ideas into clear project execution steps.</p>
+            </div>
+          </article>
+          <article class="tool-card">
+            <button class="tool-btn" type="button" data-target="tool6"><i class="uil uil-brain"></i> Gemini</button>
+            <div id="tool6" class="tool-detail" hidden>
+              <p data-i18n="skills.tool6">I use Gemini to support market analysis, workflow experimentation, and rapid content ideation that improves communication and decision-making quality.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 data-i18n="projects.title">More Projects</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">(from my front-end development era)</p>
+        <div class="projects-slider">
+          <button class="project-nav prev" type="button" aria-label="Previous project">
+            <i class="uil uil-angle-left-b"></i>
+          </button>
+          <div class="projects-viewport">
+            <div class="projects-track">
+              <article class="project-slide">
+                <img src="https://nessierdg.netlify.app/assets/img/conciertoneon.jpg" alt="Red Hot Chili Peppers redesign preview" class="project-image" loading="lazy" />
+                <div class="project-copy">
+                  <h3 data-i18n="projects.card1.title">Red Hot Chili Peppers website redesign</h3>
+                  <p data-i18n="projects.card1.text">First Front-End project developed using HTML, CSS, Sass and Bootstrap.</p>
+                  <a href="https://rhcpredesign.netlify.app" target="_blank" rel="noreferrer noopener" class="btn secondary project-link" data-i18n="projects.link">Check this site</a>
+                </div>
+              </article>
+              <article class="project-slide">
+                <img src="https://nessierdg.netlify.app/assets/img/ogimg.jpg" alt="Eventzor website preview" class="project-image" loading="lazy" />
+                <div class="project-copy">
+                  <h3 data-i18n="projects.card2.title">Eventzor - event finder website</h3>
+                  <p data-i18n="projects.card2.text">First Front-End project implementing Javascript and jQuery. HTML, CSS, Sass and Bootstrap for the design and layout.</p>
+                  <a href="https://eventzor.netlify.app" target="_blank" rel="noreferrer noopener" class="btn secondary project-link" data-i18n="projects.link">Check this site</a>
+                </div>
+              </article>
+              <article class="project-slide">
+            </div>
+          </div>
+          <button class="project-nav next" type="button" aria-label="Next project">
+            <i class="uil uil-angle-right-b"></i>
+          </button>
+        </div>
+        <div class="projects-dots" aria-label="Project slider pagination">
+          <button class="project-dot active" type="button" aria-label="Go to project 1"></button>
+          <button class="project-dot" type="button" aria-label="Go to project 2"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <h2 data-i18n="contact.title">Contact me</h2>
+      <p class="section-subtitle" data-i18n="contact.subtitle">Let's get in touch! :)</p>
+      <div class="contact-links">
+        <a href="mailto:nessier.lucio@gmail.com" aria-label="Send email">
+          <i class="uil uil-envelope"></i>
+          <span>nessier.lucio@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/lucio-nessier/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
+          <i class="uil uil-linkedin-alt"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <p class="contact-location"><i class="uil uil-map-marker"></i> <span data-i18n="contact.location">Córdoba, Argentina</span></p>
+    </div>
+    <div class="mini-footer">
+      <div class="container mini-footer-content">
+        <p class="footer-copy" data-i18n="footer.copy">Vibe coded with love by Lucio A. Nessier</p>
+        <button id="toTopBtn" class="to-top-btn" type="button" aria-label="Back to top">
+          <i class="uil uil-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const i18n = {
+      en: {
+        "nav.about": "About",
+        "nav.experience": "Experience",
+        "nav.services": "Services",
+        "nav.education": "Education",
+        "nav.skills": "Skills",
+        "nav.projects": "Projects",
+        "nav.contact": "Contact",
+        "hero.title": "Hi, I'm Lucio!",
+        "hero.subtitle": "Project Manager Ssr.",
+        "hero.body": "Results-driven Project Manager with 4+ years of experience leading cross-functional teams in digital ecommerce agencies and operational environments, delivering complex projects on time and driving measurable business outcomes.",
+        "hero.cta": "Contact me",
+        "about.title": "About me",
+        "about.subtitle": "A little bit about my journey",
+        "about.text": "Project Manager focused on digital products, marketing, and operations. I work at the intersection of strategy, design, and execution, helping teams turn ideas into clear plans and deliver them on time.",
+        "about.stat1.value": "9+",
+        "about.stat1.label": "Years total experience",
+        "about.stat2.value": "100+",
+        "about.stat2.label": "Completed projects",
+        "about.stat3.value": "5",
+        "about.stat3.label": "Companies worked",
+        "about.cv": "Download CV",
+        "skills.title": "Skills",
+        "skills.subtitle": "Tools I use",
+        "skills.tool1": "I use ClickUp to manage sprint planning, project timelines, task ownership, and delivery tracking across cross-functional teams in fast-paced ecommerce environments.",
+        "skills.tool2": "I use Notion as a knowledge hub for product documentation, SOPs, meeting notes, and strategic roadmaps that keep stakeholders aligned and informed.",
+        "skills.tool3": "I use Trello for visual workflow management, campaign coordination, and operational follow-up, ensuring priorities move smoothly from backlog to completion.",
+        "skills.tool4": "I work with leading ecommerce platforms to optimize storefront operations, improve conversion performance, and execute content and product updates with speed.",
+        "skills.tool5": "I use Claude to accelerate research, drafting, process design, and team enablement, helping convert ideas into clear project execution steps.",
+        "skills.tool6": "I use Gemini to support market analysis, workflow experimentation, and rapid content ideation that improves communication and decision-making quality.",
+        "exp.title": "Work Experience",
+        "exp.subtitle": "My professional journey",
+        "exp.learn": "Show more",
+        "exp.less": "Show less",
+        "exp.job1.role": "Project Manager",
+        "exp.job1.summary": "Acted as the main liaison between five international clients simultaneously and internal teams of sixteen collaborators across design, development, SEO, and paid media.",
+        "exp.job1.detail": "<ul><li><span class=\"exp-item-text\">Led a large-scale ecommerce migration of 3500 duplicated SKUs from WooCommerce to Shopify, coordinating cross-functional stakeholders and ensuring a successful on-schedule launch.<span class=\"exp-link-wrap\"><a href=\"https://gordosales.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Visit website</a></span></span></li><li><span class=\"exp-item-text\">Managed four simultaneous website redesign projects in BigCommerce, overseeing scope, timelines, and client communication from kickoff to delivery.</span></li><li><span class=\"exp-item-text\">Coordinated a multilingual WordPress redesign for a major international company, aligning content, design, and development across multiple teams.<span class=\"exp-link-wrap\"><a href=\"https://www.tulegajo.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Visit website</a></span></span></li><li><span class=\"exp-item-text\">Drove ongoing UX and performance improvements for the agency's own website, prioritizing enhancements in collaboration with internal stakeholders.<span class=\"exp-link-wrap\"><a href=\"https://www.fjsolutions.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Visit website</a></span></span></li></ul>",
+        "exp.job2.role": "Project Manager",
+        "exp.job2.summary": "Project Manager in an ISO certified company of 50+ professionals committed to providing equal access to language services.",
+        "exp.job2.detail": "<ul><li>Built and maintained a talent pool of 30+ collaborators, recruiting for diverse linguistic and technical projects.</li><li>Managed 15+ daily projects end-to-end, assigning tasks, optimizing timelines, and ensuring adherence to deadlines and quality standards.</li><li>Implemented risk mitigation protocols that reduced project disruptions and improved delivery consistency.</li></ul>",
+        "exp.job3.role": "Operations Manager",
+        "exp.job3.summary": "Managed one of Argentina's largest coworking networks, overseeing operations across a cross-functional team, sales funnel and client relations in a network of 450+ clients.",
+        "exp.job3.detail": "<ul><li>Led a cross-functional team of 3 aligned to OKRs and KPIs, improving operational efficiency and client satisfaction.</li><li>Spearheaded sales strategies that doubled annual revenue over 3 years by optimizing pricing models, client acquisition, and service offerings.</li><li>Managed a community of 450+ on-site clients; retention strategies increased client retention by 80% through targeted engagement and feedback loops.</li><li>Maintained relationships with 20+ external stakeholders and analyzed operational data to improve service quality.</li></ul>",
+        "exp.job4.role": "Graphic and Web Designer",
+        "exp.job4.summary": "Graphic Design Lead and Community Manager in an important entertainment company in Córdoba.",
+        "exp.job4.detail": "<ul><li>Created 100+ digital assets for social media ads.</li><li>Supported web design and development in three different websites.</li><li>Supported operational launch of a new product.</li><li>Customer support and community management via social media.</li></ul>",
+        "exp.job5.role": "Graphic and Web Designer",
+        "exp.job5.summary": "Graphic Designer and Web designer in a digital marketing agency company.",
+        "exp.job5.detail": "<ul><li>Created 100+ digital assets for social media ads.</li><li>Designed and supported over 15+ websites in Wordpress.</li></ul>",
+        "edu.title": "Education",
+        "edu.subtitle": "My technical background",
+        "edu.card1.title": "Graphic Design technician",
+        "edu.card1.detail": "<p>La Metro, Escuela de Diseño y Comunicación Audiovisual.</p><ul class=\"education-meta\"><li>Native Spanish</li><li>Professional English (C1)</li></ul>",
+        "edu.card2.title": "Courses and certifications",
+        "edu.card2.list": "<ul class=\"education-list\"><li><span><span class=\"cert-title\">Product Strategy &amp; Product Roadmapping micro certification</span><span class=\"cert-meta\">Product School (Jan. 2024)</span></span></li><li><span><span class=\"cert-title\">Professional Data Analytics certification</span><span class=\"cert-meta\">Google (May 2023)</span></span></li><li><span><span class=\"cert-title\">Product-Led Certification</span><span class=\"cert-meta\">Pendo (Feb. 2023)</span></span></li><li><span><span class=\"cert-title\">Micro Certifications of Product Analytics &amp; Product-Led Growth</span><span class=\"cert-meta\">Product School (Jul. 2022)</span></span></li><li><span><span class=\"cert-title\">Product Design</span><span class=\"cert-meta\">Udacity (Feb. 2022)</span></span></li><li><span><span class=\"cert-title\">Product Management Diploma</span><span class=\"cert-meta\">UTN FRBA (Mar. 2022)</span></span></li></ul>",
+        "services.title": "What I Do Best",
+        "services.subtitle": "My strength is bringing structure to complex and fast moving environments, blending both my creative background with my operational expertise.",
+        "services.card1.title": "Project Management",
+        "services.card1.text": "I lead digital projects from idea to launch, aligning stakeholders, scope, timelines, and delivery so brands grow with structure, speed, and measurable results.",
+        "services.card2.title": "Strategy",
+        "services.card2.text": "I build product and marketing strategies based on priorities, data, and realistic execution plans that support sustainable growth.",
+        "services.card3.title": "Product Vision",
+        "services.card3.text": "I shape product vision into actionable roadmaps, balancing user needs, technical feasibility, and measurable business impact.",
+        "services.card4.title": "Team Leadership",
+        "services.card4.text": "I lead collaborative teams with clarity and empathy, driving accountability, communication, and high-quality project outcomes.",
+        "projects.title": "More Projects",
+        "projects.subtitle": "(from my front-end development era)",
+        "projects.card1.title": "Red Hot Chili Peppers website redesign",
+        "projects.card1.text": "First Front-End project developed using HTML, CSS, Sass and Bootstrap.",
+        "projects.card2.title": "Eventzor - event finder website",
+        "projects.card2.text": "First Front-End project implementing Javascript and jQuery. HTML, CSS, Sass and Bootstrap for the design and layout.",
+        "projects.link": "Check this site",
+        "contact.title": "Contact me",
+        "contact.subtitle": "Let's get in touch! :)",
+        "contact.location": "Córdoba, Argentina",
+        "footer.copy": "Vibe coded with love by Lucio A. Nessier"
+      },
+      es: {
+        "nav.about": "Sobre mí",
+        "nav.experience": "Experiencia",
+        "nav.services": "Servicios",
+        "nav.education": "Educación",
+        "nav.skills": "Habilidades",
+        "nav.projects": "Proyectos",
+        "nav.contact": "Contacto",
+        "hero.title": "¡Hola, soy Lucio!",
+        "hero.subtitle": "Project Manager Ssr.",
+        "hero.body": "Project Manager orientado a resultados con más de 4 años de experiencia liderando equipos interdisciplinarios en agencias digitales de ecommerce y entornos operativos, entregando proyectos complejos a tiempo y generando resultados de negocio medibles.",
+        "hero.cta": "Contáctame",
+        "about.title": "Sobre mí",
+        "about.subtitle": "Un poco sobre mi recorrido",
+        "about.text": "Project Manager enfocado en productos digitales, marketing y operaciones. Trabajo en la intersección entre estrategia, diseño y ejecución, ayudando a los equipos a transformar ideas en planes claros y entregarlos a tiempo.",
+        "about.stat1.value": "9+",
+        "about.stat1.label": "Años de experiencia",
+        "about.stat2.value": "100+",
+        "about.stat2.label": "Proyectos completados",
+        "about.stat3.value": "5",
+        "about.stat3.label": "Empresas en las que trabajé",
+        "about.cv": "Descargar CV",
+        "skills.title": "Habilidades",
+        "skills.subtitle": "Herramientas que uso",
+        "skills.tool1": "Uso ClickUp para gestionar la planificación de sprints, cronogramas de proyecto, responsables de tareas y seguimiento de entregas entre equipos cross funcionales en entornos ecommerce dinámicos.",
+        "skills.tool2": "Uso Notion como centro de conocimiento para documentación de producto, SOPs, notas de reuniones y roadmaps estratégicos que mantienen a los stakeholders alineados e informados.",
+        "skills.tool3": "Uso Trello para la gestión visual de flujos de trabajo, coordinación de campañas y seguimiento operativo, asegurando que las prioridades avancen con claridad desde el backlog hasta la entrega.",
+        "skills.tool4": "Trabajo con plataformas líderes de ecommerce para optimizar operaciones de storefront, mejorar el rendimiento de conversión y ejecutar actualizaciones de contenido y catálogo con rapidez.",
+        "skills.tool5": "Uso Claude para acelerar investigación, redacción, diseño de procesos y enablement de equipos, ayudando a convertir ideas en pasos claros de ejecución.",
+        "skills.tool6": "Uso Gemini para apoyar análisis de mercado, experimentación de workflows e ideación rápida de contenido que mejora la comunicación y la toma de decisiones.",
+        "exp.title": "Experiencia laboral",
+        "exp.subtitle": "Mi recorrido profesional",
+        "exp.learn": "Ver más",
+        "exp.less": "Ver menos",
+        "exp.job1.role": "Project Manager",
+        "exp.job1.summary": "Actué como nexo principal entre cinco clientes internacionales en simultáneo y equipos internos de dieciséis colaboradores entre diseño, desarrollo, SEO y paid media.",
+        "exp.job1.detail": "<ul><li><span class=\"exp-item-text\">Lideré una migración ecommerce a gran escala de 3500 SKUs duplicados desde WooCommerce hacia Shopify, coordinando stakeholders cross funcionales y asegurando un lanzamiento exitoso en tiempo.<span class=\"exp-link-wrap\"><a href=\"https://gordosales.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Visitar sitio</a></span></span></li><li><span class=\"exp-item-text\">Gestioné cuatro rediseños web simultáneos en BigCommerce, supervisando alcance, tiempos y comunicación con clientes desde kickoff hasta entrega.</span></li><li><span class=\"exp-item-text\">Coordiné un rediseño multilingüe en WordPress para una importante compañía internacional, alineando contenido, diseño y desarrollo entre múltiples equipos.<span class=\"exp-link-wrap\"><a href=\"https://www.tulegajo.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Visitar sitio</a></span></span></li><li><span class=\"exp-item-text\">Impulsé mejoras continuas de UX y rendimiento para el sitio propio de la agencia, priorizando optimizaciones en colaboración con stakeholders internos.<span class=\"exp-link-wrap\"><a href=\"https://www.fjsolutions.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Visitar sitio</a></span></span></li></ul>",
+        "exp.job2.role": "Project Manager",
+        "exp.job2.summary": "Project Manager en una empresa certificada ISO con más de 50 profesionales comprometidos con brindar acceso equitativo a servicios lingüísticos.",
+        "exp.job2.detail": "<ul><li>Construí y mantuve una red de talento de más de 30 colaboradores, reclutando para proyectos lingüísticos y técnicos diversos.</li><li>Gestioné más de 15 proyectos diarios de punta a punta, asignando tareas, optimizando tiempos y asegurando cumplimiento de plazos y estándares de calidad.</li><li>Implementé protocolos de mitigación de riesgos que redujeron interrupciones y mejoraron la consistencia en las entregas.</li></ul>",
+        "exp.job3.role": "Operations Manager",
+        "exp.job3.summary": "Gestioné una de las redes de coworking más grandes de Argentina, supervisando operaciones, un equipo cross funcional, el funnel comercial y la relación con clientes dentro de una red de más de 450 cuentas.",
+        "exp.job3.detail": "<ul><li>Lideré un equipo cross funcional de 3 personas alineado a OKRs y KPIs, mejorando la eficiencia operativa y la satisfacción de clientes.</li><li>Impulsé estrategias comerciales que duplicaron la facturación anual en 3 años mediante optimización de pricing, adquisición de clientes y propuesta de servicios.</li><li>Gestioné una comunidad de más de 450 clientes onsite; las estrategias de retención elevaron la permanencia en un 80% gracias a acciones de engagement y circuitos de feedback.</li><li>Mantuve relaciones con más de 20 stakeholders externos y analicé datos operativos para mejorar la calidad del servicio.</li></ul>",
+        "exp.job4.role": "Diseñador Gráfico y Web",
+        "exp.job4.summary": "Líder de diseño gráfico y community manager en una importante empresa de entretenimiento en Córdoba.",
+        "exp.job4.detail": "<ul><li>Creé más de 100 piezas digitales para anuncios en redes sociales.</li><li>Brindé soporte en diseño y desarrollo web en tres sitios distintos.</li><li>Acompañé el lanzamiento operativo de un nuevo producto.</li><li>Realicé atención al cliente y community management a través de redes sociales.</li></ul>",
+        "exp.job5.role": "Diseñador Gráfico y Web",
+        "exp.job5.summary": "Diseñador gráfico y web en una agencia de marketing digital.",
+        "exp.job5.detail": "<ul><li>Creé más de 100 piezas digitales para anuncios en redes sociales.</li><li>Diseñé y di soporte a más de 15 sitios web en Wordpress.</li></ul>",
+        "edu.title": "Educación",
+        "edu.subtitle": "Mi formación técnica",
+        "edu.card1.title": "Técnico en Diseño Gráfico",
+        "edu.card1.detail": "<p>La Metro, Escuela de Diseño y Comunicación Audiovisual.</p><ul class=\"education-meta\"><li>Español nativo</li><li>Inglés profesional (C1)</li></ul>",
+        "edu.card2.title": "Cursos y certificaciones",
+        "edu.card2.list": "<ul class=\"education-list\"><li><span><span class=\"cert-title\">Micro certificación en Product Strategy &amp; Product Roadmapping</span><span class=\"cert-meta\">Product School (ene. 2024)</span></span></li><li><span><span class=\"cert-title\">Certificación profesional en Data Analytics</span><span class=\"cert-meta\">Google (may. 2023)</span></span></li><li><span><span class=\"cert-title\">Product-Led Certification</span><span class=\"cert-meta\">Pendo (feb. 2023)</span></span></li><li><span><span class=\"cert-title\">Micro certificaciones en Product Analytics &amp; Product-Led Growth</span><span class=\"cert-meta\">Product School (jul. 2022)</span></span></li><li><span><span class=\"cert-title\">Product Design</span><span class=\"cert-meta\">Udacity (feb. 2022)</span></span></li><li><span><span class=\"cert-title\">Diplomatura en Product Management</span><span class=\"cert-meta\">UTN FRBA (mar. 2022)</span></span></li></ul>",
+        "services.title": "Lo que mejor hago",
+        "services.subtitle": "Mi fortaleza está en aportar estructura a entornos complejos y de ritmo acelerado, combinando mi background creativo con mi experiencia operativa.",
+        "services.card1.title": "Gestión de Proyectos",
+        "services.card1.text": "Lidero proyectos digitales desde la idea hasta el lanzamiento, alineando stakeholders, alcance, tiempos y entregas para que las marcas crezcan con estructura, velocidad y resultados medibles.",
+        "services.card2.title": "Estrategia",
+        "services.card2.text": "Construyo estrategias de producto y marketing basadas en prioridades, datos y planes de ejecución realistas para impulsar crecimiento sostenible.",
+        "services.card3.title": "Visión de producto",
+        "services.card3.text": "Convierto la visión de producto en roadmaps accionables, equilibrando necesidades del usuario, viabilidad técnica e impacto de negocio medible.",
+        "services.card4.title": "Liderazgo de equipo",
+        "services.card4.text": "Lidero equipos colaborativos con claridad y empatía, impulsando responsabilidad, comunicación y resultados de alta calidad.",
+        "projects.title": "Más Proyectos",
+        "projects.subtitle": "(de mi etapa de desarrollo front-end)",
+        "projects.card1.title": "Rediseño web de Red Hot Chili Peppers",
+        "projects.card1.text": "Mi primer proyecto Front-End desarrollado con HTML, CSS, Sass y Bootstrap.",
+        "projects.card2.title": "Eventzor - buscador de eventos",
+        "projects.card2.text": "Mi primer proyecto Front-End implementando Javascript y jQuery. HTML, CSS, Sass y Bootstrap para el diseño y la maquetación.",
+        "projects.link": "Ver sitio",
+        "contact.title": "Contacto",
+        "contact.subtitle": "¡Pongámonos en contacto! :)",
+        "contact.location": "Córdoba, Argentina",
+        "footer.copy": "Vibe coded con amor por Lucio A. Nessier"
+      }
+    };
+
+    const body = document.body;
+    const langToggle = document.getElementById("langToggle");
+    const themeToggle = document.getElementById("themeToggle");
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const cvLink = document.getElementById("cvLink");
+    const toTopBtn = document.getElementById("toTopBtn");
+    const learnButtons = document.querySelectorAll(".learn-btn");
+    const toolButtons = document.querySelectorAll(".tool-btn");
+    const toolCards = document.querySelectorAll(".tool-card");
+    const projectTrack = document.querySelector(".projects-track");
+    const projectDots = document.querySelectorAll(".project-dot");
+    const projectPrev = document.querySelector(".project-nav.prev");
+    const projectNext = document.querySelector(".project-nav.next");
+    let currentLang = "en";
+    let currentProject = 0;
+    const cvFiles = {
+      en: "file:///C:/Users/lucio/AppData/Roaming/Cursor/User/workspaceStorage/ea0304f78de38779bd85349ee678f530/pdfs/a28806eb-c73f-4aa9-8a5e-d4922e972705/CV%20Nessier%20ENG.pdf",
+      es: "file:///C:/Users/lucio/AppData/Roaming/Cursor/User/workspaceStorage/ea0304f78de38779bd85349ee678f530/pdfs/8a633698-0fa0-4a8b-b249-365fcffbe667/CV%20Nessier.pdf"
+    };
+
+    function updateExperienceButtons() {
+      learnButtons.forEach((btn) => {
+        const panel = document.getElementById(btn.dataset.target);
+        const open = panel.classList.contains("open");
+        btn.textContent = open ? i18n[currentLang]["exp.less"] : i18n[currentLang]["exp.learn"];
+      });
+    }
+
+    function applyLang(lang) {
+      document.querySelectorAll("[data-i18n]").forEach((node) => {
+        const key = node.getAttribute("data-i18n");
+        if (i18n[lang][key]) {
+          node.textContent = i18n[lang][key];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-html]").forEach((node) => {
+        const key = node.getAttribute("data-i18n-html");
+        if (i18n[lang][key]) {
+          node.innerHTML = i18n[lang][key];
+        }
+      });
+
+      langToggle.textContent = lang === "en" ? "ES" : "EN";
+      document.documentElement.lang = lang;
+      cvLink.href = cvFiles[lang];
+      updateExperienceButtons();
+    }
+
+    function setTheme(theme) {
+      body.setAttribute("data-theme", theme);
+      themeToggle.textContent = theme === "dark" ? "\u2600\uFE0F" : "\uD83C\uDF19";
+      localStorage.setItem("theme", theme);
+    }
+
+    function updateProjectSlider() {
+      if (!projectTrack) {
+        return;
+      }
+      projectTrack.style.transform = `translateX(-${currentProject * 100}%)`;
+      projectDots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentProject);
+      });
+    }
+
+    langToggle.addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "es" : "en";
+      applyLang(currentLang);
+    });
+
+    themeToggle.addEventListener("click", () => {
+      const next = body.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      setTheme(next);
+    });
+
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    learnButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const panel = document.getElementById(btn.dataset.target);
+        panel.classList.toggle("open");
+        updateExperienceButtons();
+      });
+    });
+
+    function closeAllToolCards() {
+      toolCards.forEach((card) => {
+        card.classList.remove("active");
+        const btn = card.querySelector(".tool-btn");
+        const panel = card.querySelector(".tool-detail");
+        btn.setAttribute("aria-expanded", "false");
+        panel.hidden = true;
+      });
+    }
+
+    toolButtons.forEach((btn) => {
+      btn.setAttribute("aria-expanded", "false");
+      btn.addEventListener("click", () => {
+        const card = btn.closest(".tool-card");
+        const panel = document.getElementById(btn.dataset.target);
+        const shouldOpen = !card.classList.contains("active");
+        closeAllToolCards();
+        if (shouldOpen) {
+          card.classList.add("active");
+          btn.setAttribute("aria-expanded", "true");
+          panel.hidden = false;
+        }
+      });
+    });
+
+    if (projectPrev && projectNext) {
+      projectPrev.addEventListener("click", () => {
+        currentProject = (currentProject - 1 + projectDots.length) % projectDots.length;
+        updateProjectSlider();
+      });
+
+      projectNext.addEventListener("click", () => {
+        currentProject = (currentProject + 1) % projectDots.length;
+        updateProjectSlider();
+      });
+    }
+
+    projectDots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        currentProject = index;
+        updateProjectSlider();
+      });
+    });
+
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    const preferredTheme = localStorage.getItem("theme") || "light";
+    setTheme(preferredTheme);
+    applyLang("en");
+    updateProjectSlider();
+  </script>
+</body>
+</html>
