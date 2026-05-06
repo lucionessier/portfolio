@@ -583,7 +583,7 @@ a {
 
 .cert-title {
   display: block;
-  color: hsl(var(--hue-color), 8%, 15%);
+  color: var(--title-color);
 }
 
 .cert-meta {
@@ -914,7 +914,8 @@ a {
     grid-template-columns: 1fr auto auto;
     align-items: center;
     height: auto;
-    padding: 0.8rem 0;
+    padding: 0.8rem 0.35rem;
+    column-gap: 0.55rem;
     text-align: left;
   }
 
@@ -922,10 +923,13 @@ a {
     width: auto;
     text-align: left;
     justify-self: start;
+    margin-left: 0.35rem;
   }
 
   .menu-toggle {
     display: inline-flex;
+    justify-self: end;
+    margin-right: 0.35rem;
   }
 
   .nav-links {
@@ -964,6 +968,16 @@ a {
     width: auto;
     justify-content: flex-end;
     justify-self: end;
+  }
+
+  .projects-slider {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 0.6rem;
+  }
+
+  .project-nav {
+    align-self: center;
+    justify-self: center;
   }
 
   .services-grid {
