@@ -535,6 +535,67 @@ a {
   gap: 1rem;
 }
 
+.process-steps {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.process-card {
+  background: var(--container-color);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1.5rem 1.2rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.process-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--first-color) 12%, var(--container-color));
+  color: var(--first-color);
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
+.process-card h3 {
+  color: hsl(var(--hue-color), 65%, 36%);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 1.2875rem;
+  margin-bottom: 0.6rem;
+  white-space: nowrap;
+}
+
+body[data-theme="dark"] .process-card h3 {
+  color: hsl(var(--hue-color), 65%, 36%);
+}
+
+.process-title-icon {
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.process-card p {
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
 .education-card {
   background: var(--container-color);
   border: 1px solid var(--border-color);
@@ -768,6 +829,10 @@ a {
   text-align: center;
 }
 
+#process .container {
+  text-align: center;
+}
+
 #skills .container {
   text-align: center;
 }
@@ -903,6 +968,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .project-image {
     height: 210px;
   }
@@ -984,20 +1053,16 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
   .tools-grid {
     grid-template-columns: 1fr;
   }
 
   .mini-footer-content {
     flex-direction: column;
-  }
-
-  .projects-slider {
-    grid-template-columns: 1fr;
-  }
-
-  .project-nav {
-    justify-self: center;
   }
 
   .project-image {
